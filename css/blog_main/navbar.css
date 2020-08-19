@@ -1,0 +1,25 @@
+.navbar{
+    display : flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+
+.navbar_element{
+    padding-right: 30px;
+    padding-bottom: 16px;
+    color: white;
+}
+
+
+@media (min-width: 700px) {
+    .navbar{
+        display : flex;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    .navbar{
+        padding-top: 26px;
+    }
+}

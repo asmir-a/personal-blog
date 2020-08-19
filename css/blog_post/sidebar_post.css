@@ -1,0 +1,20 @@
+.sidebar{
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.image_sidebar{
+    width : 150px;
+    height : 160px;
+}
+
+
+@media (min-width: 600px){
+    .image_sidebar{
+        width : 250px;
+        height : 260px;
+    }
+}

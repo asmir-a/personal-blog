@@ -1,0 +1,21 @@
+.footer_element{
+    display : flex;
+    flex-direction : column;
+    justify-content : flex-start;
+    align-items: center;
+    padding-right: 20px;
+    margin: 20px;
+}
+
+.footer_link{
+    color : white;
+}
+
+.logo_image{
+    width: 130px;
+    height: 80px;
+}
+
+.footer_link_head{
+    font-size: 1.6em;
+}

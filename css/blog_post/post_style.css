@@ -1,0 +1,109 @@
+@import "sidebar_post.css";
+@import "../blog_main/footer.css";
+@import "author_card_post.css";
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "hd"
+    "sd"
+    "main"
+    "ft";
+    background-color: orange;
+    text-align: center;
+}
+
+.head_post{
+    grid-area: hd;
+    padding-top: 20px;
+    border: solid white;
+    color: white;
+}
+
+.sidebar_post{
+    grid-area: sd; 
+    color: white;
+}
+
+.main_post{
+    grid-area: main;
+    border: solid white;
+    color: white;
+    padding: 20px;
+}
+
+.footer_post{
+    grid-area: ft;
+    border: solid white;
+    color: white;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}       
+
+a{
+    color: white;
+    font-size: large;
+}
+
+.serif{
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    font-weight: normal;
+}
+
+.footer_header{
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+@media (min-width: 600px) and (max-width: 900px){
+    .container{
+        display : grid;
+        grid-template-columns: 150px auto;
+        grid-template-rows: 150px auto auto;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "sd sd main main main main"
+        "ft ft ft ft ft ft";
+        background-color: purple;
+        color: white;
+    }
+    .footer_post{
+        grid-area: ft;
+        border: solid white;
+        color: white;
+        display : flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }    
+
+}
+
+@media (min-width: 901px){
+    .container{
+        display : grid;
+        grid-template-columns : 250px auto;
+        grid-template-rows: 150px auto auto;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        background-color : red;
+        text-align: center;
+    }
+    .footer_post{
+        grid-area: ft;
+        border: solid white;
+        color: white;
+        display : flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }    
+}
